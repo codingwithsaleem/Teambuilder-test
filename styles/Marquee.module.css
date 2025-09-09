@@ -1,10 +1,33 @@
 .anim {
     position: absolute;
     will-change: transform;
-    animation: marquee 15s linear infinite ;
+    animation: marquee 15s linear infinite;
 }
 
 .anim:hover {
     animation-play-state: paused;
-    
+}
+
+.rtl {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.rtl::-webkit-scrollbar {
+    height: 4px;
+}
+
+.rtl::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.rtl::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.rtl::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
